@@ -4,12 +4,11 @@ import os
 from ruy import *
 
 
-token='1208425210:AAH8kj8cmxCenkar-0vgSBT_g5k8REscCPw'
+token='1385719939:AAFrUzLO2SQMnOIp2V2YRH6kVnpA-cSjPWA'
 bot=telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
 def quy(ms):
-    
-	bot.send_message(ms.chat.id,'*Выберите язык/Tilni tanlang*',reply_markup=key,parse_mode='markdown')
+    bot.send_message(ms.chat.id,'*Выберите язык/Tilni tanlang*',reply_markup=key,parse_mode='markdown')
 
 @bot.callback_query_handler(func=lambda c: True)
 def callback_query(call):
