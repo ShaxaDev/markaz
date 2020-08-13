@@ -127,7 +127,7 @@ def ruy4(msg):
 	
 
 	else:
-		g=open('{}F.txt'.format(msg.from_user.first_name),'a')
+		g=open('{}.txt'.format(msg.from_user.first_name),'a')
 		g.write('1.Ism famlyasi: {}\n'.format(suz1))
 		g.close()
 		y=bot.send_message(msg.chat.id,'*🏠Manzilingizni kiriting ✍️*:',parse_mode='markdown')
@@ -147,7 +147,7 @@ def ruy5(msg):
 	else:
 
 		suz1=msg.text
-		j=open('{}F.txt'.format(msg.from_user.first_name),'a')
+		j=open('{}.txt'.format(msg.from_user.first_name),'a')
 		j.write('2.Manzili: {}\n'.format(suz1))
 		j.close()
 		t1=bot.send_message(msg.chat.id,'*☎️Telefon raqamingizni kiriting ✍️:*',parse_mode='markdown')
@@ -167,15 +167,15 @@ def ruy6(msg):
 
 		suz2=msg.text
 		suz3=msg.from_user.username
-		q=open('{}F.txt'.format(msg.from_user.first_name),'a')
+		q=open('{}.txt'.format(msg.from_user.first_name),'a')
 		q.write('3.Telefon: {}\n'.format(suz2))
 		q.write('4.Telegram manzili: @{}\n'.format(suz3))
 		q.write('5.Kurs nomi: Fizika')
 		q.close()
-		e=open('{}F.txt'.format(msg.from_user.first_name),'r')
+		e=open('{}.txt'.format(msg.from_user.first_name),'r')
 		bot.send_document(1089169019,e)
 		e.close()
-		os.remove('{}F.txt'.format(msg.from_user.first_name))
+		os.remove('{}.txt'.format(msg.from_user.first_name))
 		bot.send_message(msg.chat.id,'*Ro`yxatdan o`tish muvafaqiyatli yakunlandi✅*',reply_markup=d,parse_mode='markdown')
 
 
