@@ -129,10 +129,10 @@ def ruy1(ms):
 		bot.send_message(ms.chat.id,bosh_qism,reply_markup=f,parse_mode='markdown')
 	
 	else :
-		suz=ms.text
-		f=open('{}M.txt'.format(ms.from_user.first_name),'a')
-		f.write('1.Ism famlyasi: {}\n'.format(suz))
-		f.close()
+		suzlar=ms.text
+		farmat=open('{}M.txt'.format(ms.from_user.first_name),'a')
+		farmat.write('1.Ism famlyasi: {}\n'.format(suzlar))
+		farmat.close()
 		s=bot.send_message(ms.chat.id,'*🏠Manzilingizni kiriting ✍️:*',parse_mode='markdown')
 		bot.register_next_step_handler(s,ruy2)
 	#else:
