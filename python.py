@@ -130,7 +130,7 @@ def ruy1(ms):
 	
 	else :
 		suzlar=ms.text
-		farmat=open('{}M.txt'.format(ms.from_user.first_name),'a')
+		farmat=open('{}.txt'.format(ms.from_user.first_name),'a')
 		farmat.write('1.Ism famlyasi: {}\n'.format(suzlar))
 		farmat.close()
 		s=bot.send_message(ms.chat.id,'*🏠Manzilingizni kiriting ✍️:*',parse_mode='markdown')
