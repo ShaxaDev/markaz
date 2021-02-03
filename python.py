@@ -62,7 +62,7 @@ def callback_query(call):
 		bot.register_next_step_handler(smil,ruy5)
 
 def ruy5(msg):
-	if msg.text=='стоп':
+	if (msg.text).lower()=='стоп':
 		bot.send_message(msg.chat.id,bosh_qism_rus,reply_markup=p,parse_mode='markdown')
 	else:
 		ful=msg.text
@@ -74,7 +74,7 @@ def ruy5(msg):
 		bot.register_next_step_handler(yubor,ruy6)
 def ruy6(msg):
 
-	if msg.text=='стоп':
+	if (msg.text).lower()=='стоп':
 		bot.send_message(msg.chat.id,bosh_qism_rus,reply_markup=p,parse_mode='markdown')
 	else:
 		suz5=msg.text
@@ -84,7 +84,7 @@ def ruy6(msg):
 		yubo2=bot.send_message(msg.chat.id,'*☎️ Введите свой номер телефона ✍️:*',parse_mode='markdown')
 		bot.register_next_step_handler(yubo2,ruy7)
 def ruy7(msg):
-	if msg.text=='стоп':
+	if (msg.text).lower()=='стоп':
 		bot.send_message(msg.chat.id,bosh_qism_rus,reply_markup=p,parse_mode='markdown')
 	else:
 		suz7=msg.text
@@ -94,7 +94,7 @@ def ruy7(msg):
 		yubor4=bot.send_message(msg.chat.id,'*введите название курса📓:*',parse_mode='markdown')
 		bot.register_next_step_handler(yubor4,ruy8)
 def ruy8(msg):
-	if msg.text=='стоп':
+	if (msg.text).lower()=='стоп':
 		bot.send_message(msg.chat.id,bosh_qism_rus,reply_markup=p,parse_mode='markdown')
 	else:
 		suz8=msg.text
@@ -120,7 +120,7 @@ def ruy8(msg):
 ''' matematika qismi funksiyalari'''
 def ruy1(ms):
 
-	if ms.text=='stop':
+	if (ms.text).lower()=='stop':
 		f=types.InlineKeyboardMarkup(row_width=1)
 		f1=types.InlineKeyboardButton('Matematika🧮',callback_data='matem')
 		f2=types.InlineKeyboardButton('Fizika📡',callback_data='fiz')
@@ -138,7 +138,7 @@ def ruy1(ms):
 	#else:
 	#	bot.send_message(ms.chat.id,'*Malumot kiritishda shartlarga qarang hech qanday ortiqcha raqam yoki smile ishlatmang!\nBoshqattan ro`yxattan o`ting*',parse_mode='markdown',reply_markup=l)
 def ruy2(ms):
-	if ms.text=='stop':
+	if (ms.text).lower()=='stop':
 		f=types.InlineKeyboardMarkup(row_width=1)
 		f1=types.InlineKeyboardButton('Matematika🧮',callback_data='matem')
 		f2=types.InlineKeyboardButton('Fizika📡',callback_data='fiz')
@@ -153,7 +153,7 @@ def ruy2(ms):
 		t=bot.send_message(ms.chat.id,'*☎️Telefon raqamingizni kiriting ✍️:*',parse_mode='markdown')
 		bot.register_next_step_handler(t,ruy3)
 def ruy3(ms):
-	if ms.text=='stop':
+	if (ms.text).lower()=='stop':
 		f=types.InlineKeyboardMarkup(row_width=1)
 		f1=types.InlineKeyboardButton('Matematika🧮',callback_data='matem')
 		f2=types.InlineKeyboardButton('Fizika📡',callback_data='fiz')
@@ -171,7 +171,7 @@ def ruy3(ms):
 		yu=bot.send_message(ms.chat.id,'*Kurs nomini yozing✍️📎:*',parse_mode='markdown')
 		bot.register_next_step_handler(yu,ruy4)
 def ruy4(ms):
-	if ms.text=='stop':
+	if (ms.text).lower()=='stop':
 		f=types.InlineKeyboardMarkup(row_width=1)
 		f1=types.InlineKeyboardButton('Matematika🧮',callback_data='matem')
 		f2=types.InlineKeyboardButton('Fizika📡',callback_data='fiz')
