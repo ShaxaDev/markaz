@@ -1,2 +1,3 @@
 # markaz
-o`quv markaz uchun 
+o`quv markazlar uchun oquvchilarni royxatdan otkazuvchi telegram bot
+manzil: @jojabotbot
